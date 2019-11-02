@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLCDNumber" name="Bombas">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 16pt &quot;Wide Latin&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLCDNumber" name="Time">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 16pt &quot;Wide Latin&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>250</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menumenu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <widget class="QMenu" name="new_game">
+     <property name="title">
+      <string>Новая игра</string>
+     </property>
+     <addaction name="novichok"/>
+     <addaction name="lubitel"/>
+     <addaction name="profi"/>
+    </widget>
+    <addaction name="pause"/>
+    <addaction name="new_game"/>
+   </widget>
+   <addaction name="menumenu"/>
+  </widget>
+  <action name="pause">
+   <property name="text">
+    <string>Пауза </string>
+   </property>
+  </action>
+  <action name="novichok">
+   <property name="text">
+    <string>Новичок 9х9 10 бомб</string>
+   </property>
+  </action>
+  <action name="lubitel">
+   <property name="text">
+    <string>Любитель 16х16 40 бомб</string>
+   </property>
+  </action>
+  <action name="profi">
+   <property name="text">
+    <string>Профессионал 16х30 99 бомб</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
